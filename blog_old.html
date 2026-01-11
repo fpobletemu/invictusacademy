@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de Invictus Basketball Academy - Noticias, anuncios y artículos sobre básquetbol">
+    <title>Blog - Invictus Basketball Academy</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="images/logo_invictus.png" alt="Invictus Basketball Academy" class="nav-logo">
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#about" class="nav-link">Academia</a></li>
+                <li><a href="index.html#programs" class="nav-link">Programas</a></li>
+                <li><a href="index.html#coaches" class="nav-link">Entrenadores</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Galería</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1 class="page-title">Noticias & Anuncios</h1>
+            <p class="page-subtitle">Mantente al día con las últimas noticias de Invictus Basketball Academy</p>
+        </div>
+    </section>
+
+    <!-- Blog Filters -->
+    <section class="blog-filters-section">
+        <div class="container">
+            <div class="blog-filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="noticias">Noticias</button>
+                <button class="filter-btn" data-category="eventos">Eventos</button>
+                <button class="filter-btn" data-category="resultados">Resultados</button>
+                <button class="filter-btn" data-category="consejos">Consejos</button>
+            </div>
+            
+            <div class="blog-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="blogSearch" placeholder="Buscar artículos...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Main Blog Content -->
+                <div class="blog-main">
+                    <div class="posts-grid" id="postsGrid">
+                        <!-- Blog posts will be populated by JavaScript -->
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <button class="page-btn" id="prevPage" disabled>
+                            <i class="fas fa-chevron-left"></i> Anterior
+                        </button>
+                        <div class="page-numbers" id="pageNumbers"></div>
+                        <button class="page-btn" id="nextPage">
+                            Siguiente <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Featured Post -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Destacado</h3>
+                        <div class="featured-post">
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=250&fit=crop" alt="Featured Post">
+                            <div class="featured-content">
+                                <span class="featured-category">
+                                    <i class="fas fa-trophy"></i> Eventos
+                                </span>
+                                <h4>Torneo de Verano 2026</h4>
+                                <p>Se vienen las inscripciones para nuestro tradicional torneo de verano.</p>
+                                <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Categorías</h3>
+                        <ul class="category-list">
+                            <li>
+                                <a href="#" data-category="noticias">
+                                    <i class="fas fa-newspaper"></i>
+                                    <span>Noticias</span>
+                                    <span class="category-count">12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="eventos">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Eventos</span>
+                                    <span class="category-count">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="resultados">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Resultados</span>
+                                    <span class="category-count">15</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-category="consejos">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Consejos</span>
+                                    <span class="category-count">6</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Recent Posts -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Posts Recientes</h3>
+                        <div class="recent-posts">
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=100&h=100&fit=crop" alt="Post">
+                                <div class="recent-post-content">
+                                    <h5>Victoria Épica en Semifinales</h5>
+                                    <span class="recent-date"><i class="far fa-calendar"></i> 8 Ene 2026</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=100&h=100&fit=crop" alt="Post">
+                                <div class="recent-post-content">
+                                    <h5>Nuevas Instalaciones Inauguradas</h5>
+                                    <span class="recent-date"><i class="far fa-calendar"></i> 5 Ene 2026</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?w=100&h=100&fit=crop" alt="Post">
+                                <div class="recent-post-content">
+                                    <h5>5 Consejos para Mejorar tu Tiro</h5>
+                                    <span class="recent-date"><i class="far fa-calendar"></i> 2 Ene 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p>Suscríbete y recibe las últimas noticias directamente en tu correo</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Tu email" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Síguenos</h3>
+                        <div class="social-links-sidebar">
+                            <a href="https://instagram.com/invictusbasketball" target="_blank" rel="noopener noreferrer" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://facebook.com/invictusbasketball" target="_blank" rel="noopener noreferrer" class="social-btn facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://twitter.com/invictusbasket" target="_blank" rel="noopener noreferrer" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://youtube.com/invictusbasketball" target="_blank" rel="noopener noreferrer" class="social-btn youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/logo_invictus.png" alt="Invictus Basketball Academy" class="footer-logo">
+                    </div>
+                    <p class="footer-text">
+                        Formando campeones dentro y fuera de la cancha desde 2016.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Academia</a></li>
+                        <li><a href="index.html#programs">Programas</a></li>
+                        <li><a href="index.html#coaches">Entrenadores</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programas</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#programs">Mini Basketball</a></li>
+                        <li><a href="index.html#programs">Desarrollo Juvenil</a></li>
+                        <li><a href="index.html#programs">Élite Competitivo</a></li>
+                        <li><a href="index.html#programs">Entrenamiento Personal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i>+56 9 8765 4321</li>
+                        <li><i class="fas fa-envelope"></i>info@invictusbasketball.cl</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Santiago, Chile</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Invictus Basketball Academy. Todos los derechos reservados.</p>
+                <p class="footer-credit">Desarrollado por Fernando Poblete</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

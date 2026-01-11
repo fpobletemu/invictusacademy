@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendario de Eventos - Invictus Basketball Academy">
+    <title>Calendario - Invictus Basketball Academy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-new">
+        <div class="container-new">
+            <div class="navbar-brand-new">
+                <a href="index.html">
+                    <img src="images/logo_invictus.png" alt="Invictus" class="logo-new">
+                </a>
+                <span class="brand-text">INVICTUS<br><span class="brand-sub">BASKETBALL ACADEMY</span></span>
+            </div>
+            
+            <ul class="nav-menu-new" id="navMenu">
+                <li><a href="index.html" class="nav-link-new">Inicio</a></li>
+                <li><a href="programs.html" class="nav-link-new">Programas</a></li>
+                <li><a href="blog.html" class="nav-link-new">Blog</a></li>
+                <li><a href="calendario.html" class="nav-link-new active">Calendario</a></li>
+                <li><a href="nosotros.html" class="nav-link-new">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav-link-new">Contacto</a></li>
+            </ul>
+            
+            <a href="contacto.html" class="btn-cta-nav">¡INSCRÍBETE!</a>
+            
+            <button class="nav-toggle-new" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Calendar Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container-new">
+            <h1 class="page-header-title">CALENDARIO DE EVENTOS</h1>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container-new">
+            <div class="calendar-grid">
+                <!-- Left Column: Upcoming Events -->
+                <div class="upcoming-events">
+                    <h2 class="upcoming-title">PRÓXIMOS EVENTOS</h2>
+                    
+                    <div class="event-list">
+                        <div class="event-item-card">
+                            <div class="event-date">
+                                <span class="event-day">15</span>
+                                <span class="event-month">ENE</span>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-time">10:00 AM</div>
+                                <h3 class="event-name">Torneo Inter-Academia</h3>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Gimnasio Principal</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item-card">
+                            <div class="event-date">
+                                <span class="event-day">15</span>
+                                <span class="event-month">ENE</span>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-time">3:30 PM</div>
+                                <h3 class="event-name">Torneo Inter-Academia</h3>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Cancha 2</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item-card">
+                            <div class="event-date">
+                                <span class="event-day">20</span>
+                                <span class="event-month">ENE</span>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-time">1:30 PM</div>
+                                <h3 class="event-name">U20 vs Titanes - Infantil</h3>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Estadio Central</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item-card">
+                            <div class="event-date">
+                                <span class="event-day">25</span>
+                                <span class="event-month">ENE</span>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-time">9:00 AM</div>
+                                <h3 class="event-name">Clínica de Defensa</h3>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Trewhela's School</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item-card">
+                            <div class="event-date">
+                                <span class="event-day">28</span>
+                                <span class="event-month">ENE</span>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-time">4:00 PM</div>
+                                <h3 class="event-name">Entrenamiento Intensivo</h3>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Gimnasio Principal</p>
+                            </div>
+                        </div>
+
+                        <div class="event-item-card">
+                            <div class="event-date">
+                                <span class="event-day">30</span>
+                                <span class="event-month">ENE</span>
+                            </div>
+                            <div class="event-info">
+                                <div class="event-time">6:00 PM</div>
+                                <h3 class="event-name">Final Liga Juvenil</h3>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Arena Municipal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Calendar -->
+                <div class="calendar-widget">
+                    <div class="calendar-header">
+                        <button class="calendar-nav-btn" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <h3 class="calendar-month">ENERO 2026</h3>
+                        <button class="calendar-nav-btn" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="calendar-body">
+                        <div class="calendar-weekdays">
+                            <div class="weekday">Dom</div>
+                            <div class="weekday">Lun</div>
+                            <div class="weekday">Mar</div>
+                            <div class="weekday">Mié</div>
+                            <div class="weekday">Jue</div>
+                            <div class="weekday">Vie</div>
+                            <div class="weekday">Sáb</div>
+                        </div>
+
+                        <div class="calendar-days" id="calendarDays">
+                            <!-- January 2026 starts on Thursday -->
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day">1</div>
+                            <div class="calendar-day">2</div>
+                            <div class="calendar-day">3</div>
+                            <div class="calendar-day">4</div>
+                            <div class="calendar-day">5</div>
+                            <div class="calendar-day">6</div>
+                            <div class="calendar-day">7</div>
+                            <div class="calendar-day">8</div>
+                            <div class="calendar-day">9</div>
+                            <div class="calendar-day">10</div>
+                            <div class="calendar-day today">11</div>
+                            <div class="calendar-day">12</div>
+                            <div class="calendar-day">13</div>
+                            <div class="calendar-day">14</div>
+                            <div class="calendar-day event-day">15</div>
+                            <div class="calendar-day">16</div>
+                            <div class="calendar-day">17</div>
+                            <div class="calendar-day">18</div>
+                            <div class="calendar-day">19</div>
+                            <div class="calendar-day event-day">20</div>
+                            <div class="calendar-day">21</div>
+                            <div class="calendar-day">22</div>
+                            <div class="calendar-day">23</div>
+                            <div class="calendar-day">24</div>
+                            <div class="calendar-day event-day">25</div>
+                            <div class="calendar-day">26</div>
+                            <div class="calendar-day">27</div>
+                            <div class="calendar-day event-day">28</div>
+                            <div class="calendar-day">29</div>
+                            <div class="calendar-day event-day">30</div>
+                            <div class="calendar-day">31</div>
+                        </div>
+                    </div>
+
+                    <!-- Event Type Filters -->
+                    <div class="event-filters">
+                        <h3 class="filters-title">TIPO DE EVENTO</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" checked>
+                                <span class="filter-icon clinic"><i class="fas fa-basketball-ball"></i></span>
+                                <span class="filter-label">Todas de Clínica</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="filter-icon training"><i class="fas fa-dumbbell"></i></span>
+                                <span class="filter-label">Entrenamiento</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-new">
+        <div class="container-new">
+            <div class="footer-content-new">
+                <div class="footer-info">
+                    <h4>Invictus Basketball Academy</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Trewhela's School - Las Camelias 2854, Providencia</p>
+                    <p><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> +56 9 8765 4321</p>
+                    <p><i class="fas fa-envelope"></i> contacto@invictusbasketball.cl</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recibe noticias y actualizaciones</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" class="newsletter-input">
+                        <button type="submit" class="btn-newsletter">Suscribirse</button>
+                    </form>
+                    <a href="index.html" class="footer-link">invictusbasketball.cl</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
